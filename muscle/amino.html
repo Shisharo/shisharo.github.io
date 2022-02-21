@@ -1,0 +1,99 @@
+
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>sito</title>
+  <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+
+
+  <meta http-equiv="X-UA-Complatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+<header class="header clearfix">
+  <a href="kanji.html" class="header__logo">Kanji's Fitness</a>
+  <a href="" class="header__iconbar">
+    <span></span>
+    <span></span>
+    <span></span>
+
+  </a>
+
+  <ul class="header__menu animate">
+    <li class="header__menu__item"><a href="kanji.html">Home</a></li>
+    <li class="header__menu__item"><a href="single.html">Creatin</a></li>
+    <li class="header__menu__item"><a href="protin.html">Protein</a></li>
+    <li class="header__menu__item"><a href="amino.html">BCAA/EAA</a></li>
+    <li class="header__menu__item"><a href="ita.html">🇮🇹</a></li>
+    </ul>
+</header>
+
+<section class="cover cover--single">
+  <div class="cover__caption__filter"></div>
+  <div class="cover__caption">
+    <div class="cover__caption__copy">
+      <h1>primary message of the home</h1>
+      <a href="https://www.myprotein.com/elysium.search?search=essential+amino" class="button">Buy essential aminoacid now!!</a>
+    </div>
+  </div>
+</section>
+
+<article class="single">
+    <div class="single__copy">
+        <h2>Essential aminoacid</h2>
+        <p class="single__copy__meta"> 15.02.2022, articolo scritto da Kanji</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis efficitur mauris, id auctor tortor.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis efficitur mauris, id auctor tortor.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis efficitur mauris, id auctor tortor.</p>
+    </div>
+</article>
+
+<section class="cards clearfix">
+  <div class="card">
+    <img class="card__image" src="https://source.unsplash.com/random/400x260" alt="peko">
+    <div class="card__copy">
+      <h3>titolo</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis efficitur mauris, id auctor tortor. Nullam mi velit, finibus at pulvinar ut, faucibus quis massa. Fusce semper nulla ut convallis commodo.</p>
+    </div>
+
+  </div>
+  <div class="card">
+    <img class="card__image" src="https://source.unsplash.com/random/400x260" alt="peko">
+    <div class="card__copy">
+      <h3>titolo</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis efficitur mauris, id auctor tortor. Nullam mi velit, finibus at pulvinar ut, faucibus quis massa. Fusce semper nulla ut convallis commodo.</p>
+    </div>
+
+  </div>
+  <div class="card">
+    <img class="card__image" src="https://source.unsplash.com/random/400x260" alt="peko">
+    <div class="card__copy">
+      <h3>titolo</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis efficitur mauris, id auctor tortor. Nullam mi velit, finibus at pulvinar ut, faucibus quis massa. Fusce semper nulla ut convallis commodo.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="footer">
+  <p>copyright - 2022 kanji's best site</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".header__iconbar").click(function(e){
+      $(".header__menu").toggleClass("is-open");
+      e.preventDefault();
+
+
+    });
+  });
+</script>
+
+</body>
+</html>
