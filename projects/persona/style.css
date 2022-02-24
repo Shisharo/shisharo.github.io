@@ -1,0 +1,33 @@
+@font-face {
+  font-family: p5;
+  src: url(../../fonts/p5hatty/p5hatty.ttf);
+}
+
+button {
+  height: 60px;
+  min-width: 100px;
+  border:none;
+  background: #45cea2;
+  color: white;
+  font-size: 25px;
+  font-family: p5;
+  position: relative;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-clip-path: polygon(-10% 45%, 17% 5%, 89% 7%, 110% 50%, 70% 95%, 23% 100%);
+  clip-path: polygon(-10% 45%, 17% 5%, 89% 7%, 110% 50%, 70% 95%, 23% 100%);
+}
+
+button:before{
+  z-index: -1;
+  content: '';
+  width: 92%;
+  height: 50px;
+  background: black;
+  position: absolute;
+  top: 5px;
+  left: 4%;
+  -webkit-clip-path: polygon(-10% 45%, 17% 5%, 89% 7%, 110% 50%, 70% 95%, 23% 100%);
+  clip-path: polygon(-10% 45%, 17% 5%, 89% 7%, 110% 50%, 70% 95%, 23% 100%);
+}
