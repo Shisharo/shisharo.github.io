@@ -92,7 +92,7 @@ let stage4 = [
 	[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 ]
 let stage = [stage1, stage2, stage3, stage4];
-let currentStage = 3;
+let currentStage = 0;
 
 let mario = [],
 	qmblock, grblock, block, flagpole, flagtop, gameover, cloud = [],
