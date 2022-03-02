@@ -22,7 +22,7 @@ let stage1 = [
 	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
 	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
 	[0, 0, 0, 0, 1, 1, 0, -7, -8, -9, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
-	[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+	[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1]
 ]
 let stage2 = [
 	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
@@ -59,24 +59,50 @@ let stage3 = [
 	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 	[0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 4],
+	[0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 3],
+	[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 3],
+	[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 3],
+	[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 3],
+	[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 3],
+	[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 3],
+	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+	[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+]
+let stage4 = [
+	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+	[0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0],
+	[0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 2, 0, 2, 0, 0, 0],
+	[0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 0, 0, 0],
+	[0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0],
+	[0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0],
+	[0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 	[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 ]
-let stage = [stage1, stage2, stage3];
-let currentStage = 0;
+let stage = [stage1, stage2, stage3, stage4];
+let currentStage = 3;
 
 let mario = [],
 	qmblock, grblock, block, flagpole, flagtop, gameover, cloud = [],
 	bush = [];
 
 let at = 0;
+
+let rightPressed = false,
+	leftPressed = false,
+	currentBlock = 1;
 
 function preload() {
 	mario[0] = loadImage("mariorx0.png");
@@ -124,6 +150,84 @@ let wr = false,
 	l = false;
 
 function draw() {
+	game();
+	if (playerPosition.y + playerVelocity.y > height - res - 2) {
+		if (currentStage == 2) {
+			playerPosition.y = height - res - 10;
+			playerVelocity.y = -2;
+		} else {
+			gameOver();
+		}
+	}
+	if (currentStage == 3 && devMode && mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
+		stroke(255, 255, 0);
+		noFill();
+		rect(floor(mouseX / res) * res, floor(mouseY / res) * res, res, res);
+		if (leftPressed) {
+			stage[currentStage][floor(mouseY / res)][floor(mouseX / res)] = currentBlock;
+		}
+		if (rightPressed) {
+			stage[currentStage][floor(mouseY / res)][floor(mouseX / res)] = 0;
+		}
+		switch (currentBlock) {
+			case -1:
+				image(cloud[0], 0, 0, res, res);
+				break;
+			case -2:
+				image(cloud[1], 0, 0, res, res);
+				break;
+			case -3:
+				image(cloud[2], 0, 0, res, res);
+				break;
+			case -4:
+				image(cloud[3], 0, 0, res, res);
+				break;
+			case -5:
+				image(cloud[4], 0, 0, res, res);
+				break;
+			case -6:
+				image(cloud[5], 0, 0, res, res);
+				break;
+				break;
+			case -7:
+				image(bush[0], 0, 0, res, res);
+				break;
+				break;
+			case -8:
+				image(bush[1], 0, 0, res, res);
+				break;
+				break;
+			case -9:
+				image(bush[2], 0, 0, res, res);
+				break;
+			case 0:
+				break;
+			case 1:
+				image(grblock, 0, 0, res, res);
+				break;
+			case 2:
+				image(block, 0, 0, res, res);
+				break;
+			case 3:
+				image(flagpole, 0, 0, res, res);
+				break;
+			case 4:
+				image(flagtop, 0, 0, res, res);
+				break;
+		}
+	}
+	if (playerPosition.x < 0) {
+		playerPosition.x = 0;
+		playerVelocity.x = 0;
+		playerAcceleration.x = 0;
+	} else if (playerPosition.x > width - res) {
+		playerPosition.x = width - res;
+		playerVelocity.x = 0;
+		playerAcceleration.x = 0;
+	}
+}
+
+function game() {
 	canvas.position(windowWidth / 2 - width / 2, windowHeight / 2 - height / 2);
 	background(148, 148, 255);
 	noStroke();
@@ -186,55 +290,38 @@ function draw() {
 		playerAcceleration.x = 0;
 		playerVelocity.x *= 0.9;
 	}
-	if (playerPosition.x < 0) {
-		playerPosition.x = 0;
-		playerVelocity.x = 0;
-		playerAcceleration.x = 0;
-	} else if (playerPosition.x > width - res) {
-		playerPosition.x = width - res;
-		playerVelocity.x = 0;
-		playerAcceleration.x = 0;
-	}
 	playerPosition.add(playerVelocity);
 	playerVelocity.add(playerAcceleration);
 	playerVelocity.x = playerVelocity.x > 4 ? 4 : playerVelocity.x;
 	playerVelocity.x = playerVelocity.x < -4 ? -4 : playerVelocity.x;
 	if (onGround)
 		playerPosition.y += 0.1;
-	if (stage[currentStage][ceil((playerPosition.y + res) / res) - 1][floor((playerPosition.x + res - 0.2) / res)] == null) {
-		gameOver();
-	}
-	if (collision(stage[currentStage][ceil((playerPosition.y + res) / res) - 1][floor((playerPosition.x + res - 0.2) / res)]) || collision(stage[currentStage][ceil((playerPosition.y + res) / res) - 1][floor((playerPosition.x + res) / res) - 1])) {
-		playerVelocity.y = 0;
-		playerPosition.y = floor(playerPosition.y / res) * res;
-		onGround = true;
-	} else {
-		onGround = false;
-	}
-	if (collision(stage[currentStage][floor((playerPosition.y + res) / res) - 1][floor((playerPosition.x + res - 0.2) / res)]) || collision(stage[currentStage][floor((playerPosition.y + res) / res) - 1][floor((playerPosition.x + res) / res) - 1])) {
-		playerVelocity.y = 0;
-		playerPosition.y = ceil(playerPosition.y / res) * res;
-	}
-	if (collision(stage[currentStage][floor((playerPosition.y + res) / res) - 1][floor((playerPosition.x + res) / res) - 1])) {
-		playerVelocity.x = 0;
-		playerPosition.x = ceil(playerPosition.x / res) * res;
-	}
-	if (collision(stage[currentStage][floor((playerPosition.y + res) / res) - 1][ceil((playerPosition.x + res) / res) - 1])) {
-		playerVelocity.x = 0;
-		playerPosition.x = floor(playerPosition.x / res) * res;
-	}
-	if (stage[currentStage][ceil((playerPosition.y + res) / res) - 1][floor((playerPosition.x + res - 0.2) / res)] == 3 || stage[currentStage][ceil((playerPosition.y + res) / res) - 1][floor((playerPosition.x + res - 0.2) / res)] == 4) {
-		currentStage++;
-		playerPosition.set(2 * res, 18 * res);
+	if (playerPosition.y >= 0) {
+		if (collision(stage[currentStage][ceil((playerPosition.y + res) / res) - 1][floor((playerPosition.x + res - 0.2) / res)]) || collision(stage[currentStage][ceil((playerPosition.y + res) / res) - 1][floor((playerPosition.x + res) / res) - 1])) {
+			playerVelocity.y = 0;
+			playerPosition.y = floor(playerPosition.y / res) * res;
+			onGround = true;
+		} else {
+			onGround = false;
+		}
+		if (collision(stage[currentStage][floor((playerPosition.y + res) / res) - 1][floor((playerPosition.x + res - 0.2) / res)]) || collision(stage[currentStage][floor((playerPosition.y + res) / res) - 1][floor((playerPosition.x + res) / res) - 1])) {
+			playerVelocity.y = 0;
+			playerPosition.y = ceil(playerPosition.y / res) * res;
+		}
+		if (collision(stage[currentStage][floor((playerPosition.y + res) / res) - 1][floor((playerPosition.x + res) / res) - 1])) {
+			playerVelocity.x = 0;
+			playerPosition.x = ceil(playerPosition.x / res) * res;
+		}
+		if (collision(stage[currentStage][floor((playerPosition.y + res) / res) - 1][ceil((playerPosition.x + res) / res) - 1])) {
+			playerVelocity.x = 0;
+			playerPosition.x = floor(playerPosition.x / res) * res;
+		}
+		if (stage[currentStage][ceil((playerPosition.y + res) / res) - 1][floor((playerPosition.x + res - 0.2) / res)] == 3 || stage[currentStage][ceil((playerPosition.y + res) / res) - 1][floor((playerPosition.x + res - 0.2) / res)] == 4) {
+			currentStage++;
+			playerPosition.set(2 * res, 18 * res);
+		}
 	}
 	animate(playerPosition.x, playerPosition.y, playerVelocity.x, playerVelocity.y);
-	if (devMode) {
-		text(playerPosition, 0, 20);
-		text(playerVelocity, 0, 40);
-		text(playerAcceleration, 0, 60);
-		text(onGround, 0, 80);
-		text(currentStage, 0, 100);
-	}
 }
 
 function animate(px, py, pvx, pvy) {
@@ -251,9 +338,9 @@ function animate(px, py, pvx, pvy) {
 				sp = 5;
 		}
 		if (pvx > 0.5)
-		mix = 11;
-	if (pvy != 0)
-	mix = 9;
+			mix = 11;
+		if (pvy != 0)
+			mix = 9;
 	} else {
 		mix = 0;
 		if (pvx > 0.5) {
@@ -265,13 +352,19 @@ function animate(px, py, pvx, pvy) {
 				sp = 5;
 		}
 		if (pvx < -0.5)
-		mix = 10;
-	if (pvy != 0)
-	mix = 8;
+			mix = 10;
+		if (pvy != 0)
+			mix = 8;
 	}
 	if (frameCount % sp == 0)
-	at = at > 1 ? 0 : at + 1;
+		at = at > 1 ? 0 : at + 1;
 	image(mario[mix], px, py);
+}
+
+function gameOver() {
+	background(0);
+	image(gameover, width / 2 - 69, height / 2 - 7);
+	noLoop();
 }
 
 function collision(ix) {
@@ -285,29 +378,63 @@ function collision(ix) {
 }
 
 function keyPressed() {
-	if (keyCode == 38 && onGround) {
+	if (keyCode == 87 && onGround) {
 		playerVelocity.y -= 9;
 	}
-	if (keyCode == 39) {
+	if (keyCode == 68) {
 		wr = true;
 		r = true;
 		l = false;
 	}
-	if (keyCode == 37) {
+	if (keyCode == 65) {
 		wl = true;
 		r = false;
 		l = true;
 	}
-	if (keyCode == 80) {
+	if (keyCode == 80 && currentStage == 3) {
 		devMode = !devMode;
 	}
 }
 
 function keyReleased() {
-	if (keyCode == 39) {
+	if (keyCode == 68) {
 		wr = false;
 	}
-	if (keyCode == 37) {
+	if (keyCode == 65) {
 		wl = false;
+	}
+}
+
+function mousePressed() {
+	if (mouseButton == LEFT) {
+		leftPressed = true;
+	}
+	if (mouseButton == RIGHT) {
+		rightPressed = true;
+	}
+}
+
+function mouseReleased() {
+	if (mouseButton == LEFT) {
+		leftPressed = false;
+	}
+	if (mouseButton == RIGHT) {
+		rightPressed = false;
+	}
+}
+
+function mouseWheel(e) {
+	if (e.delta < 0) {
+		currentBlock++;
+		if (currentBlock == 0)
+			currentBlock++;
+		if (currentBlock > 2)
+			currentBlock = 2;
+	} else {
+		currentBlock--;
+		if (currentBlock == 0)
+			currentBlock--;
+		if (currentBlock < -9)
+			currentBlock = -9;
 	}
 }
