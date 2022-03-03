@@ -274,7 +274,7 @@ function keyPressed() {
   if (keyCode == 16)
     buildArray[round(cx / res)][round(cy / res)] -= 1;
   if (keyCode == 65) {
-    wl = true
+    wl = true;
     th = -PI / 2;
   }
   if (keyCode == 83) {
@@ -291,9 +291,16 @@ function keyPressed() {
   }
 }
 
-function keyReleased() {
-  wl = false;
-  wu = false;
-  wr = false;
-  wd = false;
+function keyReleased() {if (keyCode == 65) {
+    wl = false;
+  }
+  if (keyCode == 83) {
+    wu = false;
+  }
+  if (keyCode == 68) {
+    wr = false;
+  }
+  if (keyCode == 87) {
+    wd = false;
+  }
 }
