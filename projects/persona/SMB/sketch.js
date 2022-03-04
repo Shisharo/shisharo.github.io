@@ -378,7 +378,7 @@ function collision(ix) {
 }
 
 function keyPressed() {
-	if (keyCode == 87 && onGround) {
+	if (keyCode == 32 && onGround) {
 		playerVelocity.y -= 9;
 	}
 	if (keyCode == 68) {
