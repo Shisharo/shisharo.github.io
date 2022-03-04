@@ -290,10 +290,17 @@ function keyPressed() {
     th = 0;
   }
 }
-
 function keyReleased() {
-  wl = false;
-  wu = false;
-  wr = false;
-  wd = false;
+  if (keyCode == 65) {
+    wl = false;
+  }
+  if (keyCode == 83) {
+    wu = false;
+  }
+  if (keyCode == 68) {
+    wr = false;
+  }
+  if (keyCode == 87) {
+    wd = false;
+  }
 }
