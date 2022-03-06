@@ -291,7 +291,8 @@ function keyPressed() {
   }
 }
 
-function keyReleased() {if (keyCode == 65) {
+function keyReleased() {
+  if (keyCode == 65) {
     wl = false;
   }
   if (keyCode == 83) {
