@@ -1,29 +1,96 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en-US">
+    <head>
+        
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        <title>something</title>
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arcade Mania</title>
-  <link rel="stylesheet" href="common/style.css">
-</head>
-
-<body>
-
-  <div class="container">
-    <img src="common/thumbs.png" alt="thumbs">
-    <img src="common/logo.png" alt="Arcade Mania Logo">
-
-    <ul>
-      <li><a href="tris/index.html">Tris</a></li>
-      <li><a href="memory/index.html">Memory Game</a></li>
-      <li><a href="whack_a_bug/index.html">Whack a Bug</a></li>
-      <li><a href="running-duck/index.html">Running Duck</a></li>
-      <li><a href="space-invaders/index.html">Space Invaders</a></li>
-    </ul>
-  </div>
-
-</body>
-
+    <body>
+        <header id="paralax">
+            <a href="#" class="logo"><img src="games/common/logo.png"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Games</a></li>
+            </ul>
+        </header>
+        <div id="parallax">
+            <h1>Arcade Mania</h1>
+        </div>
+        <div id="parallax" style="display: flex; flex-direction: column; align-content: center; justify-content: center;">
+            <div  style="display: flex; flex-direction: column;">
+                <h3>Take a look to our selection of games</h3>
+                <diva style="display: flex; flex-direction: row; align-content: center; justify-content: center;">
+                    <a href="#parallax tris"><img src="main-menu/tris.png")></a>
+                    <a href="#parallax whack-a-bug"><img src="main-menu/bug.png" )></a>
+                    <a href="#parallax running-duck"><img src="main-menu/runningduck.png" )></a>
+                    <a href="#parallax space-invaders"><img src="main-menu/spaceship.png" )></a>
+                    <a href="#parallax memory-game"><img src="main-menu/back.png" )></a>
+                </diva>
+            </div>
+        </div>
+        
+        <div id="parallax tris">
+            <div  style="display: flex; flex-direction:column">
+                <h2> Tris</h2>
+                <p><br></p>
+                <a href="games/tris/index.html"><button id="selector">Play</button></a>
+            </div>
+        </div>
+        <div id="parallax" style="display: flex; flex-direction: column; align-content: center; justify-content: center; text-align: center;">
+            <h4>Tris</h4>
+            <p><br></p>
+            <h5>Tris, also known as"Tic-tac-toe", is a game that has been played for centuries. <br> Primitive forms of this game can be traced back to ancient Egypt. <br> The first player who can place 3 "X" or 3 "O" in a row wins </h5>
+        </div>
+        <div id="parallax memory-game">
+            <div  style="display: flex; flex-direction:column"> 
+                <h2>Memory game</h2>
+                <p><br></p>
+                <a href="games/memory/index.html"><button id="selector">Play</button></a>
+            </div>
+        </div>
+        <div id="parallax" style="display: flex; flex-direction: column; align-content: center; justify-content: center; text-align: center;">
+            <h4>Memory game</h4>
+            <p><br></p>
+            <h5>Memory game, also known as "Concentration", is a challanging game that gives youy the possibility to exercise your memory.<br>Find the matching pairs.</h5>
+        </div>
+        <div id="parallax whack-a-bug">
+            <div  style="display: flex; flex-direction:column"> 
+                <h2>Whack a Bug</h2>
+                <p><br></p>
+                <a href="games/whack_a_bug/index.html"><button id="selector">Play</button></a>
+            </div>
+        </div>
+        <div id="parallax"style="display: flex; flex-direction: column; align-content: center; justify-content: center; text-align: center;">
+            <h4>Whack a Bug</h4>
+            <p><br></p>
+            <h5>In Whack a Bug, is a similar game to "Catch the mole".<br>Catch all the bugs that you can find within the time limit.</h5>
+        </div>
+        <div id="parallax running-duck">
+            <div  style="display: flex; flex-direction:column"> 
+                <h2>Running Duck</h2>
+                <p><br></p>
+                <a href="games/running-duck/index.html"><button id="selector">Play</button></a>
+            </div>
+        </div>
+        <div id="parallax"style="display: flex; flex-direction: column; align-content: center; justify-content: center; text-align: center;">
+            <h4>Running Duck</h4>
+            <p><br></p>
+            <h5>Running duck, is an endless running game.<br> Score points by avoiding obstacles.</h5>
+        </div>
+        <div id="parallax space-invaders">
+            <div  style="display: flex; flex-direction:column"> 
+                <h2>Space Ivaders</h2>
+                <p><br></p>
+                <a href="games/space-invaders/index.html"><button id="selector">Play</button></a>
+            </div>
+        </div>
+        <div id="parallax"style="display: flex; flex-direction: column; align-content: center; justify-content: center; text-align: center;">
+            <h4>Space Invaders</h4>
+            <p><br></p>
+            <h5>Space Invaders, was first introduced in 1978 by a japanese company. <br> Defend the earth by shooting at the aliens with your spaceship</h5>
+        </div>
+   
+        <script src="great.js"></script>
+    </body>
 </html>
